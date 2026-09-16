@@ -71,6 +71,10 @@ nav a:hover {
     border-radius: 5px;
 }
 
+nav a:focus {
+    outline: 2px solid #000;
+}
+
 
 /* Main content */
 
@@ -106,6 +110,16 @@ section p {
     margin-bottom: 10px;
 }
 
+/* Images */
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 
 /* Lists */
 
