@@ -50,54 +50,122 @@
             </p>
         </section>
 
-        <section> 
-            <h2>Enquiry Form</h2> 
-            <form action="#" method="post"> 
-                <label for="name">Full name</label> 
-                <input type="text" id="name" name="name"> 
-                
-                <label for="email">Email address</label> 
-                <input type="email" id="email" name="email">
+        <section>
+            <h2>Enquiry Form</h2>
 
-                <label for="telephone">Telephone number (optional)</label> 
-                <input type="tel" id="telephone" name="telephone"> 
+            <p>
+            Fields marked with * are required.
+            </p>
 
-                <label for="enquiry-type">Enquiry type</label> 
-                <select id="enquiry-type" name="enquiry-type"> 
-                    <option value="visits">Visits</option> 
-                    <option value="activities">Activities</option> 
-                    <option value="accessibility">Accessibility</option> 
-                    <option value="products">Products</option> 
-                    <option value="other">Other</option> 
-                </select> 
+            <form action="#" method="post">
 
-                <fieldset> 
-                    <legend>Preferred contact method</legend> 
+                <label for="name">Full name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required>
 
-                    <div class="radio-option"> 
-                        <input type="radio" id="contact-email" name="contact-method" value="email"> 
-                        <label for="contact-email">Email</label> 
-                    </div> 
+                <label for="email">Email address *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required>
 
-                    <div class="radio-option"> 
-                        <input type="radio" id="contact-phone" name="contact-method" value="phone"> 
-                        <label for="contact-phone">Telephone</label> 
-                    </div> 
+                <label for="telephone">Telephone number (optional)</label>
+                <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    autocomplete="tel">
 
-                </fieldset> 
+                <label for="enquiry-type">Enquiry type *</label>
+                <select
+                    id="enquiry-type"
+                    name="enquiry-type"
+                    required>
+                    <option value="">Please select an enquiry type</option>
+                    <option value="visits">Visits</option>
+                    <option value="activities">Activities</option>
+                    <option value="accessibility">Accessibility</option>
+                    <option value="products">Products</option>
+                    <option value="other">Other</option>
+                </select>
 
-                <label for="enquiry-details">Enquiry details</label> 
-                <textarea id="enquiry-details" name="enquiry-details" rows="6"></textarea> 
+                <label for="visit-date">Planned visit date</label>
+                <input
+                    type="date"
+                    id="visit-date"
+                    name="visit-date">
 
-                <div class="checkbox-option"> 
-                    <input type="checkbox" id="contact-agreement" name="contact-agreement" value="agreed"> 
-                    <label for="contact-agreement"> I agree to be contacted about my enquiry. </label> 
-                </div> 
+                <label for="visitors">Number of visitors</label>
+                <input
+                    type="number"
+                    id="visitors"
+                    name="visitors"
+                    min="1"
+                    max="20">
 
-                <button type="submit">Send Enquiry</button> 
-                
-            </form> 
+                <fieldset>
+                    <legend>Preferred contact method *</legend>
+
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="contact-email"
+                            name="contact-method"
+                            value="email"
+                            required>
+                        <label for="contact-email">Email</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="contact-phone"
+                            name="contact-method"
+                            value="phone">
+                        <label for="contact-phone">Telephone</label>
+                    </div>
+
+                </fieldset>
+
+                <label for="enquiry-details">Enquiry details *</label>
+
+                <p id="enquiry-help">
+                    Please enter between 20 and 500 characters.
+                </p>
+
+                <textarea
+                    id="enquiry-details"
+                    name="enquiry-details"
+                    rows="6"
+                    minlength="20"
+                    maxlength="500"
+                    aria-describedby="enquiry-help"
+                    required></textarea>
+
+                <div class="checkbox-option">
+                    <input
+                        type="checkbox"
+                        id="contact-agreement"
+                        name="contact-agreement"
+                        value="agreed"
+                        required>
+
+                    <label for="contact-agreement">
+                        I agree to be contacted about my enquiry. *
+                    </label>
+                </div>
+
+                <button type="submit">Send enquiry</button>
+
+            </form>
         </section>
+
 
     </main>
 

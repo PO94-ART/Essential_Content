@@ -36,3 +36,21 @@
 | Open enquiry-type menu          | All enquiry options are available               | All five enquiry options are available                   | Pass         | No correction needed |
 | Use the Tab key                 | Focus moves through controls in a logical order | Focus moves through the form controls in a logical order | Pass         | No correction needed |
 
+
+
+## Navigation testing class 4 
+## Enquiry Form Testing
+
+| Test | Test data or action | Expected result | Actual result | Pass or fail | Correction and retest |
+
+| Empty form             | Submit without entering anything                    | Submission is stopped at the first required field        | The browser stopped the form and requested the required field | Pass | No correction needed |
+| Invalid email          | Enter `student@`                                    | Browser requests a valid email address                   | The browser requested a valid email address                   | Pass | No correction needed |
+| No enquiry type        | Leave the instructional option selected             | Browser requests a genuine selection                     | The browser requested an enquiry type                         | Pass | No correction needed |
+| Visitor count too low  | Enter `0`                                           | Submission is stopped                                    | The browser rejected the value                                | Pass | No correction needed |
+| Visitor count too high | Enter `21`                                          | Submission is stopped                                    | The browser rejected the value                                | Pass | No correction needed |
+| Short message          | Enter fewer than 20 characters                      | Submission is stopped                                    | The browser requested at least 20 characters                  | Pass | No correction needed |
+| No contact method      | Leave all radio buttons unselected                  | Browser requests one option                              | The browser requested a contact method                        | Pass | No correction needed |
+| No contact agreement   | Leave the consent checkbox unselected               | Submission is stopped                                    | The browser requested the checkbox to be selected             | Pass | No correction needed |
+| Valid form             | Complete all required fields with valid information | Form accepts the entries                                 | The form accepted all valid entries                           | Pass | No correction needed |
+| Keyboard operation     | Complete the form without using a mouse             | Every control is reachable, usable and has visible focus | All controls were reachable and focus was clearly visible     | Pass | No correction needed |
+

@@ -39,3 +39,10 @@ Created and tested the structure and controls for the enquiry form.
 No major problems encountered.
 Tested the form using the mouse and keyboard and confirmed that the controls work correctly.
 
+
+## Class 4 Progress
+
+Added form validation and completed accessibility testing 
+No major problems encountered 
+Added suitable validation, tested valid and invalid entries, and completed a keyboard test 
+
