@@ -49,6 +49,56 @@
                 </a>
             </p>
         </section>
+
+        <section> 
+            <h2>Enquiry Form</h2> 
+            <form action="#" method="post"> 
+                <label for="name">Full name</label> 
+                <input type="text" id="name" name="name"> 
+                
+                <label for="email">Email address</label> 
+                <input type="email" id="email" name="email">
+
+                <label for="telephone">Telephone number (optional)</label> 
+                <input type="tel" id="telephone" name="telephone"> 
+
+                <label for="enquiry-type">Enquiry type</label> 
+                <select id="enquiry-type" name="enquiry-type"> 
+                    <option value="visits">Visits</option> 
+                    <option value="activities">Activities</option> 
+                    <option value="accessibility">Accessibility</option> 
+                    <option value="products">Products</option> 
+                    <option value="other">Other</option> 
+                </select> 
+
+                <fieldset> 
+                    <legend>Preferred contact method</legend> 
+
+                    <div class="radio-option"> 
+                        <input type="radio" id="contact-email" name="contact-method" value="email"> 
+                        <label for="contact-email">Email</label> 
+                    </div> 
+
+                    <div class="radio-option"> 
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone"> 
+                        <label for="contact-phone">Telephone</label> 
+                    </div> 
+
+                </fieldset> 
+
+                <label for="enquiry-details">Enquiry details</label> 
+                <textarea id="enquiry-details" name="enquiry-details" rows="6"></textarea> 
+
+                <div class="checkbox-option"> 
+                    <input type="checkbox" id="contact-agreement" name="contact-agreement" value="agreed"> 
+                    <label for="contact-agreement"> I agree to be contacted about my enquiry. </label> 
+                </div> 
+
+                <button type="submit">Send Enquiry</button> 
+                
+            </form> 
+        </section>
+
     </main>
 
     <footer>

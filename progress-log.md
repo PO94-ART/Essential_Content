@@ -31,3 +31,11 @@ Added CSS styles for the images.
 Added alternative text to the images.
 Checked all pages and navigation links.
 Opened the website in the browser and checked that it works correctly.
+
+
+## Class 3 Progress
+
+Created and tested the structure and controls for the enquiry form.
+No major problems encountered.
+Tested the form using the mouse and keyboard and confirmed that the controls work correctly.
+
